@@ -31,7 +31,7 @@ class CompanyAuthController extends Controller
         // 1. التحقق من البيانات (Validation)
         $request->validate([
             'company_name'   => 'required|string|max:255',
-            'license_number' => 'required|unique:tourism_companies,license_number',
+            'license_number' => 'required',
             'password'       => 'required|min:6',
             'email'          => 'nullable|email|unique:tourism_companies,email',
             'phone'          => 'nullable|unique:tourism_companies,phone',
