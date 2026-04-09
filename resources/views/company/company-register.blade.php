@@ -106,7 +106,7 @@
                         </div>
                         <div class="space-y-1">
                             <label class="text-[10px] font-bold text-slate-500 mr-1 uppercase">الترخيص</label>
-                            <input type="text" name="license_number" placeholder="700xxx" required
+                            <input type="text" name="license_number" placeholder="xxx" required
                                 class="compact-input w-full">
                         </div>
                     </div>
