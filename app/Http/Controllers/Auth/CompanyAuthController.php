@@ -35,7 +35,7 @@ class CompanyAuthController extends Controller
             'password'       => 'required|min:6',
             'email'          => 'nullable|email|unique:tourism_companies,email',
             'phone'          => 'nullable|unique:tourism_companies,phone',
-            'logo'           => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048', // الأمان في الصور
+            'logo'           => 'nullable|image', // الأمان في الصور
         ]);
 
         // 2. التعامل مع رفع اللوجو (إذا وُجد)
