@@ -42,6 +42,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'company' => [
+            'driver' => 'session',
+            'provider' => 'tourism_companies_provider', // اسم البروفايدر اللي هنعرفه تحت
+        ],
     ],
 
     /*
@@ -71,6 +75,10 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'tourism_companies_provider' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\TourismCompany::class, // تأكد إن المسار لاسم الموديل بتاعك صح
+        ],
     ],
 
     /*
