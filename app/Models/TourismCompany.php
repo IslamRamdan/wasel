@@ -15,6 +15,7 @@ class TourismCompany extends Authenticatable
      */
     protected  $fillable = [
         'company_name',
+        'license_number',
         'email',
         'phone',
         'password',
