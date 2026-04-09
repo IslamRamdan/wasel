@@ -39,7 +39,7 @@ Route::prefix('company')->group(function () {
     Route::post('register', [CompanyAuthController::class, 'register'])->name('company.register.submit');
 
     // Login
-    Route::get('login', [CompanyAuthController::class, 'showLoginForm'])->name('login');
+    Route::get('login', [CompanyAuthController::class, 'showLoginForm'])->name('company.login');
     Route::post('login', [CompanyAuthController::class, 'login'])->name('company.login.submit');
 
     // Dashboard (يتم الوصول له عبر /company/dashboard)

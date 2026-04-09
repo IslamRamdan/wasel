@@ -532,7 +532,10 @@
                 <div class="live-chip">
                     <div class="ping-dot"><span></span><span></span></div>النظام يعمل
                 </div>
-                <button class="btn-primary" style="padding:0.65rem 1.5rem;font-size:0.88rem;">بوابة الشركات</button>
+                <a href="{{ route('company.login') }}" class="btn btn-primary shadow-sm"
+                    style="padding: 0.65rem 1.5rem; font-size: 0.88rem; border-radius: 10px; font-weight: bold; text-decoration: none; display: inline-block;">
+                    بوابة الشركات
+                </a>
             </div>
             <button class="lg:hidden text-slate-700 p-2 rounded-xl hover:bg-slate-100 transition"
                 onclick="document.getElementById('mobile-menu').classList.toggle('open')">

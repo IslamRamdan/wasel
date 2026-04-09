@@ -15,7 +15,7 @@ class CompanyAuthController extends Controller
     // 1. الفنكشن اللي ناقصة لعرض صفحة التسجيل
     public function showRegisterForm()
     {
-        return view('company.register');
+        return view('company.company-register');
     }
 
     // 2. الفنكشن اللي ناقصة لعرض صفحة الدخول (لو كنت عرفتها في الـ Route)
